@@ -8,17 +8,6 @@
         *{margin:0; padding: 0;}
     .sample{margin:0 20px}
     .responsive-img{width:100%}
-
-
-            *img {
-            pointer-events: none;
-        }
-
-        /* <area>에 대해서만 클릭 가능하게 처리 */
-        *area {
-            pointer-events: auto;
-        }
-
         img {
            z-index : 2;
             max-width: 100%; /* 화면 크기에 맞춰 이미지 크기 조정 */
@@ -27,6 +16,17 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
 
         } 
+
+         *img {
+            pointer-events: none;
+        }
+
+        /* <area>에 대해서만 클릭 가능하게 처리 */
+        *area {
+            pointer-events: auto;
+        }
+
+
     </style>
 </head>
 <body>
