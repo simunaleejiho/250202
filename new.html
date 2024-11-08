@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사진 갤러리</title>
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6f6f6;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%; /* 화면 크기에 맞춰 이미지 크기 조정 */
+            height: auto; /* 비율을 유지하면서 자동 높이 조정 */
+            border-radius: 10px; /* 모서리를 둥글게 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+        }
+    </style>
+</head>
+<body>
+<img src="img/img_1.jpg" usemap="#eventMap">
+
+<map name="eventMap">
+  <!--
+  아래 area 태그 안에 shape와 coords 속성을 결과화면을 참고하여 입력하세요.
+  이미지 좌표는 그림판을 활용하세요.
+   -->
+  <area shape="rect" coords="247,992,370,1070" href="new2.html" alt="시간 소개 페이지로 가기" target="_blank">
+  <area shape="rect" coords="732,631,993,877" href="https://www.instagram.com/" alt="본문 PDF 다운로드 페이지로 가기" target="_blank">
+</map>
+
+</body>
+</html>
