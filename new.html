@@ -37,9 +37,24 @@
   아래 area 태그 안에 shape와 coords 속성을 결과화면을 참고하여 입력하세요.
   이미지 좌표는 그림판을 활용하세요.
    -->
-  <area shape="rect" coords="247,992,370,1070" href="new2.html" alt="시간 소개 페이지로 가기" target="_blank">
-  <area shape="rect" coords="732,631,993,877" href="https://www.instagram.com/20250202s2?igsh=bTF2anZoNXllMzd1" alt="본문 PDF 다운로드 페이지로 가기" target="_blank">
+  <area shape="rect" coords="247,992,370,1070" href="new2.html" alt="시간 소개 페이지로 가기" target="_blank" id ="area1">
+  <area shape="rect" coords="732,631,993,877" href="https://www.instagram.com/20250202s2?igsh=bTF2anZoNXllMzd1" alt="본문 PDF 다운로드 페이지로 가기" target="_blank" id ="area2">
 </map>
+<script>
+    // 이미지 전체에 클릭 방지
+    document.querySelector('img').addEventListener('click', function(event) {
+        event.preventDefault(); // 이미지 클릭 방지
+        alert('이미지는 클릭할 수 없습니다.');
+    });
 
+    // <area>에만 클릭 가능하도록 설정
+    document.getElementById('area1').addEventListener('click', function(event) {
+        alert('첫 번째 영역 클릭!');
+    });
+
+    document.getElementById('area2').addEventListener('click', function(event) {
+        alert('두 번째 영역 클릭!');
+    });
+</script>
 </body>
 </html>
