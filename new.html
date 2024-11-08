@@ -8,6 +8,16 @@
         *{margin:0; padding: 0;}
     .sample{margin:0 20px}
     .responsive-img{width:100%}
+
+
+            img {
+            pointer-events: none;
+        }
+
+        /* <area>에 대해서만 클릭 가능하게 처리 */
+        area {
+            pointer-events: auto;
+        }
 /* 
         img {
            z-index : 2;
